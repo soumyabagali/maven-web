@@ -18,7 +18,7 @@ pipeline {
         stage('creating container') {
             steps {
                 
-                sh 'docker run -itd -p 80:80 maven'
+                sh 'docker run -itd -p 80:80 maven:v${BUILD_NUMBER}'
                 
             }
         }
