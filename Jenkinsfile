@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh 'https://github.com/soumyabagali/maven-web.git'
+              //  sh 'https://github.com/soumyabagali/maven-web.git'
                 sh 'ls -la'
             }
         }
         stage('create image') {
             steps {
                 
-                sh 'docker build -t maven .'
+                sh 'docker build -t maven:v${BUILD_NUMBER} .'
                 sh 'ls -la'
             }
         }
