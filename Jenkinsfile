@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh ''https://github.com/soumyabagali/maven-web.git
+                sh 'https://github.com/soumyabagali/maven-web.git'
                 sh 'ls -la'
             }
         }
