@@ -25,7 +25,7 @@ pipeline {
         stage('running container') {
             steps {
                 
-                sh 'check running container here http://3.112.241.188
+                sh 'check running container here http://3.112.241.188'
                 
             }
         }
